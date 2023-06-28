@@ -186,9 +186,7 @@ def compare_tables(self):
 # Добавление функциональности создания отчета и статистики
 def generate_report(self):
     if self.table_data is not None:
-        selected_columns, ok = QInputDialog.getText(self, "Выбер
-ChatGPT
-ите столбцы",
+        selected_columns, ok = QInputDialog.getText(self, "Выберите столбцы",
                                                     "Введите имена столбцов через запятую:")
         if ok:
             selected_columns = [col.strip() for col in selected_columns.split(",")]
